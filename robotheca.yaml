@@ -1,0 +1,35 @@
+# Proposed by Robotheca for this repository. Every line is yours to
+# change: check it before merging.
+
+format_version: "1.0"
+name: Open Duck Mini v2
+summary: A 3D-printed bipedal robot about 42 cm tall, inspired by Disney's BDX droids, that walks with reinforcement-learning policies trained in MuJoCo.
+category: other
+difficulty: intermediate
+license:
+  hardware: Apache-2.0
+  software: Apache-2.0
+source:
+  repository: https://github.com/apirrone/Open_Duck_Mini
+tools:
+  - 3D printer
+files:
+  urdf: mini_bdx/robots/open_duck_mini_v2/robot.urdf
+  parts_3d: print/
+  docs: docs/
+  simulation: mini_bdx/robots/open_duck_mini_v2/
+specs:
+  height_cm: 42
+build_steps:
+  - title: Get the parts
+    url: https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit?usp=sharing
+  - title: Print the parts
+    doc: docs/print_guide.md
+  - title: Assemble the robot
+    doc: docs/assembly_guide.md
+  - title: Train and run a walking policy
+    doc: docs/sim2real.md
+external_links:
+  - type: bom
+    url: https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit?usp=sharing
+    label: Parts spreadsheet (Google Sheets)
